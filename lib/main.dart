@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     for (Cactus cactus in cacti) {
       Rect cactusRect = cactus.getRect(screenSize, runDistance);
       if (dinoRect.overlaps(cactusRect.deflate(5))) {
-        // _die();
+        _die();
       }
 
       if (cactusRect.right < 0) {
